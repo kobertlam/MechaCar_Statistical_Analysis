@@ -40,11 +40,11 @@ effectively? Why or why not?
 ## T-Tests on Suspension Coils
 ![image4](Images/t-test1.jpg)
 
-* In the t-test that compares all manufacturing lots against mean PSI of the population, the p-value is 0.06028, which is above the assumed significance level of 0.05%.  Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means (mean PSI from all manufacturing lots, and mean PSI of the population) are statistically similar.
+* In the t-test that compares all manufacturing lots against mean PSI of the population, the p-value is **0.06028**, which is above the assumed significance level of 0.05%.  Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that **the two means (mean PSI from all manufacturing lots, and mean PSI of the population) are statistically similar**.
 
 ![image5](Images/t-test2.jpg)
 
 * In the t-test from individual manufacturing lot against mean PSI of the population, there is the result:
-    * Lot 1: p-value is 1, which is well above the assumed significance level of 0.05%.  Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means (mean PSI from Lot 1, and mean PSI of the population) are statistically similar.
-    * Lot 2: p-value is 0.6072, which is above the assumed significance level of 0.05%.  Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means (mean PSI from Lot 2, and mean PSI of the population) are statistically similar.
-    * Lot 3: p-value is 0.042, which is below the assumed significance level of 0.05%.  Therefore, we have sufficient evidence to reject the null hypothesis, and we would state that the two means (mean PSI from Lot 3, and mean PSI of the population) are statistically different.
+    * Lot 1: p-value is **1**, which is well above the assumed significance level of 0.05%.  Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that **the two means (mean PSI from Lot 1, and mean PSI of the population) are statistically similar**.
+    * Lot 2: p-value is **0.6072**, which is above the assumed significance level of 0.05%.  Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that **the two means (mean PSI from Lot 2, and mean PSI of the population) are statistically similar**.
+    * Lot 3: p-value is **0.042**, which is below the assumed significance level of 0.05%.  Therefore, we have sufficient evidence to reject the null hypothesis, and we would state that **the two means (mean PSI from Lot 3, and mean PSI of the population) are statistically different**.
