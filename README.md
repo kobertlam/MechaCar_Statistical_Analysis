@@ -18,7 +18,7 @@ Learn how to use R and statistics in order to analyze vehicle data.
 
 3. Does this linear model predict mpg of MechaCar prototypes 
 effectively? Why or why not?
-* The R-Squared value is 0.7149, which means that about 71% of the varibility of our dependent variable (mpg) is explained using this linear model.
+* The R-Squared value is 0.7149, which means that about 71% of the variablilty of our dependent variable (mpg) is explained using this linear model.
 * This indicates our model can predict mpg of MechaCar prototypes effectively.
- 
+
 
