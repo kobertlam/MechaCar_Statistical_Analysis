@@ -2,7 +2,7 @@
 Learn how to use R and statistics in order to analyze vehicle data.
 
 ## Linear Regression to Predict MPG
-![image](Images/Deliverable-1-results.jpg)
+![image1](Images/Deliverable-1-results.jpg)
 
 1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
@@ -21,6 +21,17 @@ effectively? Why or why not?
 * The R-Squared value is 0.7149, which means that about 71% of the variablilty of our dependent variable (mpg) is explained using this linear model.
 * This indicates our model can predict mpg of MechaCar prototypes effectively.
 * However, the intercept is statistically significant (with probability = 5.08e-08), which means that the significant features (such as vehicle_length or ground_clearance) may need scaling or transforming to help improve the predictive power of the model. Alternatively, it may mean that there are other variables that have not been included in our model.
+
+
+## Summary Statistics on Suspension Coils
+![image2](Images/total_summary.jpg)
+![image3](Images/lot_summary.jpg)
+
+1. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+
+* From the `total_summary`, the variance is 62.29 which is less than our assumed variance of 100.  Thus, the current manufacturing data meet this design specification for all manufacturing lots in total.
+* From the `lot_summary`, the variance for Lot 1 & 2 are 0.98 and 7.47 which are well below the assumed variance of 100.  However, the variance for lot 3 is 170.29 which exceeds 100 PSI as required by the design specification.  Hence, lot 1 & 2 meet the requirement, but lot 3 failed to meet the requirement as stated in the design specification.
+
 
 
 
