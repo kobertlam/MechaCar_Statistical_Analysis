@@ -1,5 +1,9 @@
 # MechaCar_Statistical_Analysis
-Learn how to use R and statistics in order to analyze vehicle data.
+Demostrate how to use R and statistics in order to analyze vehicle data.
+
+## Data Source
+1. MechaCar MPG dataset [MechaCar_mpg.csv](MechaCar_mpg.csv)
+2. Suspension Coil dataset [Suspension_Coil.csv](Suspension_Coil.csv)
 
 ## Linear Regression to Predict MPG
 ![image1](Images/Deliverable-1-results.jpg)
@@ -33,5 +37,14 @@ effectively? Why or why not?
 * From the `lot_summary`, the variance for Lot 1 & 2 are 0.98 and 7.47 which are well below the assumed variance of 100.  However, the variance for lot 3 is 170.29 which exceeds 100 PSI as required by the design specification.  Hence, lot 1 & 2 meet the requirement, but lot 3 failed to meet the requirement as stated in the design specification.
 
 
+## T-Tests on Suspension Coils
+![image4](Images/t-test1.jpg)
 
+* In the t-test that compares all manufacturing lots against mean PSI of the population, the p-value is 0.06028, which is above the assumed significance level of 0.05%.  Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means (mean PSI from all manufacturing lots, and mean PSI of the population) are statistically similar.
 
+![image5](Images/t-test2.jpg)
+
+* In the t-test from individual manufacturing lot against mean PSI of the population, there is the result:
+    * Lot 1: p-value is 1, which is well above the assumed significance level of 0.05%.  Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means (mean PSI from Lot 1, and mean PSI of the population) are statistically similar.
+    * Lot 2: p-value is 0.6072, which is above the assumed significance level of 0.05%.  Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means (mean PSI from Lot 2, and mean PSI of the population) are statistically similar.
+    * Lot 3: p-value is 0.042, which is below the assumed significance level of 0.05%.  Therefore, we have sufficient evidence to reject the null hypothesis, and we would state that the two means (mean PSI from Lot 3, and mean PSI of the population) are statistically different.
