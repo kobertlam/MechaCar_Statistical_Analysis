@@ -57,9 +57,31 @@ effectively? Why or why not?
 Design for a statistical study comparing vehicle performance of the MechaCars against other manufacturers’ vehicles.
 
 ### Design Detail:
-First, we need to think critically about what metrics would be of interest to a consumer: cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+We want to know if there is any relationship between the vehical class and the safety rating.
 
 What metric or metrics are you going to test?
+* Our study will consider the following metrics:
+    * Vehicle class
+    * Safety rating
+
 What is the null hypothesis or alternative hypothesis?
+* H0 : There is no difference in frequency distribution between both groups (vehicale class, and safety rating).
+* Ha : There is a difference in frequency distribution between both groups (vehicale class, and safety rating).
+
 What statistical test would you use to test the hypothesis? And why?
+* Since both data are categorical data type, we will use **chi-squared test** to compare the distribution of frequencies across two groups and test the above hypothesis.
+
 What data is needed to run the statistical test?
+* We need to have the **vehicle class** and **safety rating** information in the dataset
+* Then, we can build a **contingency table** using R's `table()` function:
+```
+> tbl <- table(dataSet$vehicle_class,dataSet$safety_rating)
+```
+* Then, pass the contingency table to the `chisq.test()` function:
+```
+> chisq.test(tbl) #compare categorical distributions
+```
+* If the p-value is greater than the assumed significace level of 5%, we would state that there is not enough evidence to reject the null hypothesis, and that means there is no difference in the distribution of vehicle class and safety rating.
+* If the p-value is smaller than the assumed significace level of 5%, we would state that there is enough evidence to reject the null hypothesis, and that means there is a difference in the distribution of vehicle class and safety rating.
+
+
