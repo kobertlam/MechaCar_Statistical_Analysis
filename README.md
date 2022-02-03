@@ -1,9 +1,10 @@
 # MechaCar_Statistical_Analysis
 Demostrate how to use R and statistics in order to analyze vehicle data.
 
-## Data Source
+## Data Source and R-Script
 1. MechaCar MPG dataset [MechaCar_mpg.csv](MechaCar_mpg.csv)
 2. Suspension Coil dataset [Suspension_Coil.csv](Suspension_Coil.csv)
+3. R-Script for the statistical analysis [MechaCarChallenge.R](MechaCarChallenge.R)
 
 ## Linear Regression to Predict MPG
 ![image1](Images/Deliverable-1-results.jpg)
@@ -48,3 +49,17 @@ effectively? Why or why not?
     * Lot 1: p-value is **1**, which is well above the assumed significance level of 0.05%.  Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that **the two means (mean PSI from Lot 1, and mean PSI of the population) are statistically similar**.
     * Lot 2: p-value is **0.6072**, which is above the assumed significance level of 0.05%.  Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that **the two means (mean PSI from Lot 2, and mean PSI of the population) are statistically similar**.
     * Lot 3: p-value is **0.042**, which is below the assumed significance level of 0.05%.  Therefore, we have sufficient evidence to reject the null hypothesis, and we would state that **the two means (mean PSI from Lot 3, and mean PSI of the population) are statistically different**.
+
+
+## Study Design: MechaCar vs Competition
+
+### Objective:
+Design for a statistical study comparing vehicle performance of the MechaCars against other manufacturers’ vehicles.
+
+### Design Detail:
+First, we need to think critically about what metrics would be of interest to a consumer: cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+
+What metric or metrics are you going to test?
+What is the null hypothesis or alternative hypothesis?
+What statistical test would you use to test the hypothesis? And why?
+What data is needed to run the statistical test?
